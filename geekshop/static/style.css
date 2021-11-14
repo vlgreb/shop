@@ -82,12 +82,17 @@ html, body {
 }
 .basket {
 	display: block;
-	width: 23px;
+	width: 100px;
 	height: 23px;	
 	background-image: url(img/basket.png);
 	position: absolute;
 	top: 63px;
 	left: 1210px;
+	text-decoration: none;
+	color: #555;
+	padding-left: 27px;
+	background-repeat: no-repeat;
+	font-weight: bold;
 }
 
 .clearfix:after {
@@ -299,13 +304,13 @@ html, body {
 }
 
 .promo-content-1 {
-	background-image: url(img/promo-img1.jpg);
+	background-image: url(/static/img/promo-img1.jpg);
 	width: 683px;
 	height: 683px;
 	float: left;
 }
 .promo-content-2 {
-	background-image: url(img/promo-img2.jpg);
+	background-image: url(/static/img/promo-img2.jpg);
 	width: 683px;
 	height: 683px;
 	float: right;
@@ -414,7 +419,7 @@ html, body {
 	margin-top: 105px;
 	height: 800px;
 	padding-left: 98px;
-	background-image: url(img/slider-hotdeal.jpg);
+	background-image: url(/static/img/slider-hotdeal.jpg);
 	position: relative;
 }
 .text-hotDeal {
@@ -443,7 +448,7 @@ html, body {
 	height: 570px;
 	width: 570px;	
 	float: left;
-	background-image: url(img/product-1-lg.jpg);
+	background-image: url(/static/img/product-1-lg.jpg);
 }
 .exclusive-small {
 	width: 570px;
@@ -503,7 +508,7 @@ html, body {
 .mobile {
 	height: 516px;
 	margin-top: 90px;
-	background-image: url(img/mobile-back.jpg);
+	background-image: url(/static/img/mobile-back.jpg);
 	padding-left: 99px;
 	position: relative;
 }
@@ -659,14 +664,14 @@ td:first-child {
 	margin-top: 30px;
 }
 .social1{
-	background: url(img/social-links.png);
+	background: url(/static/img/social-links.png);
 	height: 28px;
 	width: 28px;
 	float: left;
 
 }
 .social2{
-	background: url(img/social-links.png);
+	background: url(/static/img/social-links.png);
 	background-position: -34px 0px;
 	height: 28px;
 	width: 28px;
@@ -674,7 +679,7 @@ td:first-child {
 	margin-left: 3px;
 }
 .social3{
-	background: url(img/social-links.png);
+	background: url(/static/img/social-links.png);
 	background-position: -67px 0px;
 	height: 28px;
 	width: 28px;
@@ -682,7 +687,7 @@ td:first-child {
 	margin-left: 3px;
 }
 .social4{
-	background: url(img/social-links.png);
+	background: url(/static/img/social-links.png);
 	background-position: -101px 0px;
 	height: 28px;
 	width: 28px;
@@ -893,7 +898,8 @@ td:first-child {
 	padding-left: 98px;
 	padding-right: 98px;
 	margin-top: 98px;
-	height: 651px; 
+	/*height: 651px; */
+	height: 551px;
 }
 .details-slider {
 	width: 570px;
@@ -902,7 +908,8 @@ td:first-child {
 }
 .slider-product {
 	width: 570px;
-	height: 570px;
+	/*height: 570px;*/
+	height: 400px;
 }
 .slider-control {
 	width: 420px;
@@ -1012,14 +1019,17 @@ td:first-child {
 	padding: 0px 98px;
 }
 .related .title {
-	height: 343px;
+	/*height: 343px;*/
+	height: 143px;
 	margin-right: 0;
 }
 .related .title h2 {
-	margin-top: 245px;
+	/*margin-top: 245px;*/
+	margin-top: 45px;
 }
 .related .title .explore {
-	margin-top: 262px;
+	/*margin-top: 262px;*/
+	margin-top: 62px;
 }
 .related-products {
 	margin-bottom: 120px;
