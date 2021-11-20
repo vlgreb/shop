@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 {% load static %}
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta charset="utf-8">
-	<title>
+    <meta charset="UTF-8">
+    <title>
         {% block title %}
             {{ title|title }}
         {% endblock %}
@@ -19,17 +19,19 @@
     {% endblock %}
 </head>
 <body>
+  <div class="container">
+    <div class="h2 text-center head">
+      Админка
+    </div>
+    {% block menu %}
+      <div class="admin_menu">
+        {% include 'adminapp/includes/inc_menu.html' %}
+      </div>
+    {% endblock %}
 
-	<div class="basket_container">
-        <div class="h2 text-center head">
-            Ваша корзина, {% if user.first_name %}{{ user.first_name }}{% else %} Пользователь {% endif %}
-        </div>
-
-        {% block content %}
-
-        {% endblock %}
-	</div>
-
+    {% block content %}
+    {% endblock %}
+  </div>
 </body>
-</html>
 
+</html>
