@@ -5,6 +5,7 @@ from authapp.models import ShopUser
 
 VALID_AGE = 18
 
+
 class ShopUserLoginForm(AuthenticationForm):
     class Meta:
         model = ShopUser
