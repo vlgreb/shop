@@ -2,12 +2,16 @@
 {% load static %}
 
 {% block content %}
-    <img src="/media/ {{ user.avatar }}" />
     <form class="form-horizontal" action="{% url 'auth:edit' %}" method="post" enctype="multipart/form-data ">
         {% csrf_token %}
         {{ edit_form.as_p }}
         {{ edit_profile_form.as_p }}
-        <input type="submit" class="btn btn-primary" value="Сохранить">
+        <input type="submit" value="Сохранить" class="btn btn-primary col-lg-12">
     </form>
+    {% if user.avatar %}
+        <img src="/media/{{ user.avatar }}" />
+    {% elif user.avatar_url %}
+        <img src="{{ user.avatar_url }}" />
+    {% endif %}
 
 {% endblock %}
